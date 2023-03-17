@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rightAnchorPaneLogin" prefHeight="450.0" prefWidth="790.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reteadesocializaregui.controllers.RegisterController">
+   <children>
+      <Label id="labelLogin" fx:id="labelRegister" layoutX="277.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="237.0" stylesheets="@css/style.css" text="  Register your account">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="textFirstName" layoutX="244.0" layoutY="163.0" prefHeight="25.0" prefWidth="145.0" promptText="First name" stylesheets="@css/style.css" />
+      <TextField fx:id="textLastName" layoutX="403.0" layoutY="163.0" prefHeight="25.0" prefWidth="145.0" promptText="Last name" stylesheets="@css/style.css" />
+      <TextField fx:id="textEmail" layoutX="243.0" layoutY="281.0" prefHeight="25.0" prefWidth="304.0" promptText="E-mail" stylesheets="@css/style.css" />
+      <Button fx:id="buttonRegister" layoutX="244.0" layoutY="316.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="35.0" prefWidth="304.0" stylesheets="@css/style.css" text="Register" />
+      <Label fx:id="labelSuccess" alignment="CENTER" layoutX="297.0" layoutY="371.0" prefHeight="17.0" prefWidth="198.0" textFill="#00ff31" />
+      <PasswordField fx:id="textPassword" layoutX="243.0" layoutY="200.0" prefHeight="25.0" prefWidth="304.0" promptText="Password" stylesheets="@css/style.css" />
+      <PasswordField fx:id="textConfirmPassword" layoutX="243.0" layoutY="241.0" prefHeight="25.0" prefWidth="304.0" promptText="Confirm password" stylesheets="@css/style.css" />
+      <ImageView fitHeight="92.0" fitWidth="113.0" layoutX="339.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/register.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonLogin" layoutX="347.0" layoutY="399.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="35.0" prefWidth="96.0" stylesheets="@css/style.css" text="Back to login" />
+   </children>
+</AnchorPane>

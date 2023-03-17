@@ -1,0 +1,9 @@
+.label{
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #3466fc;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-scale-shape: true;
+}

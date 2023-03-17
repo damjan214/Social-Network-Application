@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="leftAnchorPaneLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="790.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reteadesocializaregui.controllers.HelloController">
+   <children>
+      <Label id="labelLogin" fx:id="labelLogin" layoutX="71.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="255.0" stylesheets="@css/style.css" text="    Login to your account   ">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="textEmail" layoutX="47.0" layoutY="112.0" prefHeight="26.0" prefWidth="299.0" stylesheets="@css/style.css" />
+      <Label id="loginLabels" fx:id="labelEmail" layoutX="51.0" layoutY="82.0" prefHeight="30.0" prefWidth="41.0" stylesheets="@css/style.css" text="E-mail" textAlignment="CENTER" />
+      <Label id="loginLabels" fx:id="labelPassword" layoutX="51.0" layoutY="138.0" prefHeight="26.0" prefWidth="63.0" stylesheets="@css/style.css" text="Password" textAlignment="CENTER" />
+      <Button id="button" fx:id="buttonLogin" layoutX="47.0" layoutY="206.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="35.0" prefWidth="299.0" stylesheets="@css/style.css" text="Login" />
+      <Label id="labelRegister" fx:id="labelRegister" layoutX="64.0" layoutY="292.0" prefHeight="18.0" prefWidth="270.0" stylesheets="@css/style.css" text="Don't you have an account? Register now!" />
+      <Button fx:id="buttonRegister" layoutX="47.0" layoutY="319.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="35.0" prefWidth="299.0" stylesheets="@css/style.css" text="Register" />
+      <PasswordField fx:id="textPassword" layoutX="48.0" layoutY="166.0" prefHeight="26.0" prefWidth="299.0" stylesheets="@css/style.css" />
+      <Button fx:id="buttonNewTab" layoutX="47.0" layoutY="392.0" mnemonicParsing="false" onAction="#onNewTabButtonClick" prefHeight="35.0" prefWidth="70.0" stylesheets="@css/style.css" text="New tab" />
+      <AnchorPane id="rightAnchorPaneLogin" layoutX="393.0" layoutY="-1.0" prefHeight="450.0" prefWidth="399.0" stylesheets="@css/style.css">
+         <children>
+            <ImageView fitHeight="433.0" fitWidth="301.0" layoutX="55.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/loginPhoto.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
